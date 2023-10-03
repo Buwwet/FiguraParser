@@ -1,6 +1,6 @@
 <h1 align="center"> Figura Parser </h1>
 
-A patched version of https://github.com/FiguraMC/Figura with a built in parser that transforms
+A patched version of the Minecraft Figura Mod https://github.com/FiguraMC/Figura with a built in parser that transforms
 the NBT-ised avatars back to their original parts: models, scripts, textures, and sounds.
 
 All parsed avatars are to be found in `.minecraft/figura/avatars/downloaded/`
