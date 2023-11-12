@@ -111,6 +111,13 @@ public class FiguraModelParser {
                     includedTextures.add(texture.name);
                 }
             }
+            // Don't forget to also append the names of the emisive textures!
+            for (TextureData e_texture : emissiveTextures) {
+                if (!includedTextures.contains(e_texture.name)) {
+                    jsonModelTextures.add(e_texture.toBlockBenchTextureJson());
+                    includedTextures.add(e_texture.name);
+                }
+            }
 
             modelJson.add("textures", jsonModelTextures);
 
